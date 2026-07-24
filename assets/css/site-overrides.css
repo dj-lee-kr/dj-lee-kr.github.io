@@ -5,6 +5,11 @@
   --global-hover-color: #0056b3 !important;
 }
 
+/* The home page remains accessible through the site title/brand. */
+.navbar-menu-list > .nav-item:first-child {
+  display: none;
+}
+
 /*
  * Use Font Awesome's official circle-half-stroke glyph for the system-theme
  * state instead of the theme's custom clipped sun/moon composite.
