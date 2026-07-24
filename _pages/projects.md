@@ -5,7 +5,7 @@ permalink: /projects/
 description: Research projects in efficient AI systems and hardware.
 nav: true
 nav_order: 3
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
