@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap");
+
+:root {
+  --global-theme-color: #0056b3 !important;
+  --global-hover-color: #0056b3 !important;
+}
+
+/*
+ * Use Font Awesome's official circle-half-stroke glyph for the system-theme
+ * state instead of the theme's custom clipped sun/moon composite.
+ */
+.fa-half-sun-moon::before {
+  content: "\f042" !important;
+  inset: 0 !important;
+  clip-path: none !important;
+  transform: none !important;
+}
+
+.fa-half-sun-moon::after {
+  content: none !important;
+  display: none !important;
+}
