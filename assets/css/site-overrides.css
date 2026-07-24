@@ -46,6 +46,62 @@
   display: none !important;
 }
 
+/* About profile */
+.post article .profile {
+  width: 42%;
+  max-width: 140px;
+}
+
+.post article .profile.float-right {
+  margin-left: 1.75rem;
+}
+
+.post article .profile figure {
+  margin-bottom: 0;
+}
+
+.post article .profile img {
+  border-radius: 0.25rem !important;
+  box-shadow: none !important;
+}
+
+.post article .profile .more-info {
+  margin-top: 0.65rem;
+  margin-bottom: 0;
+  font-family: inherit !important;
+  text-align: center;
+}
+
+.profile-links {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-links a {
+  color: var(--global-text-color);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.profile-links a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.post-header .desc {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .post article .profile {
+    width: 15%;
+    max-width: 150px;
+  }
+}
+
 /* Project listing */
 .projects .card {
   overflow: hidden;
