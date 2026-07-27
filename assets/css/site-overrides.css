@@ -141,12 +141,19 @@
 .about-more-link {
   display: inline-flex;
   align-items: center;
+  align-self: flex-end;
+  margin-right: 0.75rem;
   padding: 0;
   border: 0;
   color: var(--global-text-color-light);
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.about-more-link span {
+  color: inherit !important;
   transition: color 180ms ease;
 }
 
