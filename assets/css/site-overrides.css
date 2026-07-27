@@ -406,7 +406,7 @@ body .publications h2.bibliography:first-child {
   width: 100%;
 }
 
-.publications ol.bibliography > li {
+body .publications ol.bibliography > li {
   position: relative;
   isolation: isolate;
   min-height: 112px;
