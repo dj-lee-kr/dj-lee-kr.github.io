@@ -12,11 +12,7 @@ nav_order: 2
   {% for item in news_items %}
     <li>
       <a class="news-index-item" href="{{ item.url | relative_url }}">
-        <div class="news-index-tags" aria-label="Keywords">
-          {% for tag in item.tags %}
-            <span>{{ tag }}</span>
-          {% endfor %}
-        </div>
+        <span class="news-index-tag">{{ item.tag }}</span>
 
         <div class="news-index-content">
           <p class="news-index-summary">{{ item.summary | default: item.excerpt | strip_html | strip_newlines }}</p>

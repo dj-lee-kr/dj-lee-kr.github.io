@@ -90,7 +90,7 @@ posts_in_search: true
 bib_search: false
 
 # Dimensions
-max_width: 930px
+max_width: 1440px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -188,7 +188,7 @@ collections:
     output: true
   news:
     defaults:
-      layout: post
+      layout: page
     output: true
   projects:
     output: true
@@ -530,7 +530,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "/assets/css/site-overrides.css?v=5"
+      fonts: "/assets/css/site-overrides.css?v=6"
   highlightjs:
     integrity:
       css:

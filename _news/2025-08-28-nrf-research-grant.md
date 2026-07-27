@@ -1,15 +1,20 @@
 ---
-layout: post
+layout: page
 title: Selected for the 2025 NRF Master's Student Research Encouragement Grant
 date: 2025-08-28
 permalink: /news/2025-nrf-research-grant/
 inline: false
-tags:
-  - Research Grant
-  - NRF
+tag: project
 summary: Selected for a new project under the 2025 Master's Student Research Encouragement Grant supported by the National Research Foundation of Korea.
 related_posts: false
 ---
+
+<div class="news-detail-tag">{{ page.tag }}</div>
+<div class="news-detail-date">
+  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
+</div>
+
+<div class="news-detail-content" markdown="1">
 
 I was selected for a new project under the **2025 Master's Student Research Encouragement Grant**, supported by the National Research Foundation of Korea (NRF).
 
@@ -23,3 +28,5 @@ I was selected for a new project under the **2025 Master's Student Research Enco
 The project focuses on ultra-low-precision quantization and multiplier-free hardware architectures for efficient Mixture-of-Experts inference.
 
 [View the project details](/projects/multiplier-free-expert-layer/)
+
+</div>
