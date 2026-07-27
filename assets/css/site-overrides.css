@@ -289,8 +289,10 @@
 
 .publications ol.bibliography li .abbr abbr.badge {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
-  width: auto !important;
+  width: fit-content !important;
+  max-width: 100%;
   min-height: 1.65rem;
   margin-bottom: 0;
   padding: 0.18rem 0.55rem;
