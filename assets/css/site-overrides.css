@@ -175,13 +175,15 @@
 .news-index-tag {
   display: inline-flex;
   align-items: center;
-  justify-self: start;
+  justify-content: center;
+  justify-self: stretch;
+  width: 100%;
   min-height: 1.65rem;
   padding: 0.18rem 0.55rem;
   border-radius: 0;
   color: #0056b3;
   background: rgba(0, 86, 179, 0.055);
-  font-size: 11.5px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -196,7 +198,7 @@
   min-height: 3rem;
   margin: 0 0 0.55rem;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
   -webkit-box-orient: vertical;
@@ -207,8 +209,8 @@
 /* News list date typography */
 .news-index-content time {
   color: var(--global-text-color-light);
-  font-size: 12.5px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   letter-spacing: 0.02em;
 }
 
@@ -255,7 +257,7 @@
   border-radius: 0;
   color: #0056b3;
   background: rgba(0, 86, 179, 0.055);
-  font-size: 11.5px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -273,7 +275,7 @@
   order: 3;
   margin-bottom: 2.5rem;
   color: var(--global-text-color-light);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -285,14 +287,16 @@
 .publications ol.bibliography li .abbr {
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 
 .publications ol.bibliography li .abbr abbr.badge {
   display: inline-flex;
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   align-items: center;
-  width: fit-content !important;
-  max-width: max-content;
+  justify-content: center;
+  width: 100% !important;
+  max-width: none;
   min-height: 1.65rem;
   margin-bottom: 0;
   padding: 0.18rem 0.55rem;
@@ -300,7 +304,7 @@
   color: #0056b3 !important;
   background: rgba(0, 86, 179, 0.055);
   box-shadow: none;
-  font-size: 11.5px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
@@ -357,14 +361,14 @@
 .projects .card-title {
   margin-bottom: 0.75rem;
   color: var(--global-text-color);
-  font-size: 21.5px;
+  font-size: 24px;
   line-height: 1.25;
 }
 
 .projects .card-text {
   margin: 0;
   color: var(--global-text-color-light);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* Project detail */
@@ -377,8 +381,8 @@
 .project-kicker {
   margin-bottom: 0.75rem;
   color: #0056b3;
-  font-size: 12.5px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -386,8 +390,8 @@
 .project-hero h2 {
   max-width: 48rem;
   margin-bottom: 1rem;
-  font-size: 26.5px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
   line-height: 1.15;
 }
 
@@ -395,7 +399,7 @@
   max-width: 44rem;
   margin-bottom: 1.75rem;
   color: var(--global-text-color-light);
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .project-meta-grid {
@@ -414,15 +418,15 @@
   display: block;
   margin-bottom: 0.3rem;
   color: #0056b3;
-  font-size: 11.5px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .project-meta-grid strong {
   display: block;
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.35;
 }
@@ -441,12 +445,12 @@
 .project-focus-card i {
   margin-bottom: 1rem;
   color: #0056b3;
-  font-size: 23px;
+  font-size: 24px;
 }
 
 .project-focus-card h3 {
   margin-bottom: 0.55rem;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -491,7 +495,7 @@
   padding: 0.35rem 0;
   color: #0056b3;
   background: var(--global-bg-color);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   text-align: left;
   letter-spacing: 0.06em;
@@ -499,15 +503,15 @@
 
 .project-timeline h3 {
   margin-bottom: 0.2rem;
-  font-size: 18.5px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .project-period {
   margin-bottom: 0.75rem;
   color: #0056b3;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .project-timeline ul {
@@ -532,7 +536,7 @@
 .project-outcome > i {
   margin-top: 0.15rem;
   color: #0056b3;
-  font-size: 21.5px;
+  font-size: 18px;
 }
 
 .project-outcome p {
@@ -542,21 +546,21 @@
 
 @media (min-width: 992px) {
   .projects .card-title {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   .project-hero h2 {
-    font-size: 40px;
+    font-size: 28px;
   }
 }
 
 @media (min-width: 1200px) {
   .projects .card-title {
-    font-size: 29px;
+    font-size: 28px;
   }
 
   .project-hero h2 {
-    font-size: 42.5px;
+    font-size: 32px;
   }
 }
 
@@ -572,7 +576,7 @@
   }
 
   .news-index-summary {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .publications ol.bibliography li .row {
