@@ -3,6 +3,7 @@
 :root {
   --global-theme-color: #0056b3 !important;
   --global-hover-color: #0056b3 !important;
+  --about-body-font-size: 16px;
 }
 
 #light-toggle-system,
@@ -93,6 +94,107 @@
 .post-header .desc {
   color: var(--global-text-color);
   font-weight: 500;
+}
+
+/* About body and recent content previews */
+.post article .about-intro {
+  font-size: var(--about-body-font-size);
+}
+
+.post article .about-intro p {
+  font-size: inherit;
+}
+
+.about-preview-sections {
+  clear: both;
+  padding-top: 2.75rem;
+}
+
+.about-preview-section + .about-preview-section {
+  margin-top: 3.5rem;
+}
+
+.about-preview-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.about-preview-header h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.about-more-link {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 14px;
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.about-more-link svg {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 180ms ease;
+}
+
+.about-more-link:hover {
+  border-color: #0056b3;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.about-more-link:hover svg {
+  transform: translateX(0.15rem);
+}
+
+.news-index--compact {
+  margin-top: 0;
+}
+
+.news-index--compact .news-index-item {
+  grid-template-columns: 7rem minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  min-height: 5.75rem;
+  padding: 0.85rem 0.75rem;
+}
+
+.news-index--compact .news-index-tag {
+  font-size: 14px;
+}
+
+.news-index--compact .news-index-summary {
+  min-height: 0;
+  margin-bottom: 0.3rem;
+  font-size: 17px;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.news-index--compact .news-index-content time {
+  font-size: 14px;
+}
+
+.about-recent-publications h2.bibliography {
+  display: none;
+}
+
+.about-recent-publications ol.bibliography {
+  margin-top: 0;
+}
+
+.about-recent-publications ol.bibliography li {
+  margin-bottom: 1.5rem;
 }
 
 /* News index */
@@ -288,6 +390,10 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
+}
+
+.publications ol.bibliography > li {
+  padding: 8px 0;
 }
 
 .publications ol.bibliography li .abbr abbr.badge {
@@ -582,6 +688,33 @@
 
   .news-index-summary {
     font-size: 18px;
+  }
+
+  .about-preview-sections {
+    padding-top: 2rem;
+  }
+
+  .about-preview-section + .about-preview-section {
+    margin-top: 2.75rem;
+  }
+
+  .about-preview-header h2 {
+    font-size: 28px;
+  }
+
+  .news-index--compact .news-index-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.65rem 0.9rem;
+  }
+
+  .news-index--compact .news-index-tag {
+    grid-column: 1 / -1;
+  }
+
+  .news-index--compact .news-index-summary {
+    font-size: 16px;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
 
   .publications ol.bibliography li .row {
