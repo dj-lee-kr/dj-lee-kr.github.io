@@ -80,14 +80,16 @@
   justify-content: center;
 }
 
-.profile-links a {
-  color: var(--global-text-color);
+.post article .profile .profile-links a {
+  color: var(--global-text-color-light) !important;
   font-size: 32px;
   line-height: 1;
+  transition: color 180ms ease;
 }
 
-.profile-links a:hover {
-  color: #0056b3;
+.post article .profile .profile-links a:hover,
+.post article .profile .profile-links a:focus-visible {
+  color: #0056b3 !important;
   text-decoration: none;
 }
 
@@ -132,14 +134,12 @@
   display: inline-flex;
   gap: 0.4rem;
   align-items: center;
-  padding: 0.35rem 0.55rem;
-  border: 1px solid var(--global-divider-color);
+  padding: 0;
+  border: 0;
   color: var(--global-text-color-light);
   font-size: 14px;
   text-decoration: none;
-  transition:
-    border-color 180ms ease,
-    color 180ms ease;
+  transition: color 180ms ease;
 }
 
 .about-more-link svg {
@@ -149,7 +149,6 @@
 }
 
 .about-more-link:hover {
-  border-color: #0056b3;
   color: #0056b3;
   text-decoration: none;
 }
