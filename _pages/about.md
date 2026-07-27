@@ -29,8 +29,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am an M.S. student in the Department of Electrical and Information Engineering at [SeoulTech](https://www.seoultech.ac.kr/) and a member of the [Intelligent Digital Systems Design Laboratory (IDSL)](https://idsl.seoultech.ac.kr/), where I have been conducting research since January 2024. I received my B.S. degree in Electrical and Information Engineering from SeoulTech in February 2025.
+Hi! I am an M.S. student at the [Intelligent Digital Systems Design Laboratory (IDSL)](https://idsl.seoultech.ac.kr/) at [SeoulTech](https://www.seoultech.ac.kr/), advised by [Prof. Hyun Kim](https://scholar.google.com/citations?user=mCuJP1UAAAAJ&hl=ko). I received my B.S. degree in Electrical and Information Engineering from [SeoulTech](https://eie.seoultech.ac.kr/) in February 2025.
 
-My research interests lie in **efficient AI systems**, **AI accelerators**, **low-bit quantization**, and **digital hardware design**. I am particularly interested in algorithm–hardware co-design techniques that reduce the computation and memory costs of deep-learning models while preserving deployment efficiency on resource-constrained edge platforms.
+My research interests include **efficient AI systems**, **AI accelerators**, and **digital system design**. In particular, I am interested in algorithm–hardware co-design for reducing the computational and memory costs of AI models and enabling their efficient deployment on resource-constrained hardware platforms.
 
-My recent work includes FPGA-based object-detection accelerators, hardware-friendly model quantization, and efficient deployment of Mixture-of-Experts models. I am currently developing an ultra-low-precision quantization method and a multiplier-free hardware platform for MoE expert layers, with the goal of enabling high-performance and energy-efficient AI inference.
+To learn more about my research, please visit the [Publication page](https://dj-lee-kr.github.io/publications/) or my [Google Scholar profile](https://scholar.google.com/citations?user=fOEy_d0AAAAJ&hl=ko).
+
+For research inquiries or collaboration opportunities, please feel free to contact me at [dj.lee@seoultech.ac.kr](mailto:dj.lee@seoultech.ac.kr).

@@ -23,4 +23,14 @@ nav_order: 4
       firstNode.textContent = firstNode.textContent.replace(/^In\s+/, "");
     }
   });
+
+  document.querySelectorAll(".publications .author").forEach((element) => {
+    if (!/[가-힣]/.test(element.textContent)) return;
+
+    const textNodes = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+
+    while (textNodes.nextNode()) {
+      textNodes.currentNode.textContent = textNodes.currentNode.textContent.replace(/,?\s+and\s+/g, ", ");
+    }
+  });
 </script>
