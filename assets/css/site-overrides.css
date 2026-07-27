@@ -52,9 +52,13 @@
 }
 
 /* About profile */
+.post:has(> article .about-intro) .post-title .font-weight-bold {
+  font-weight: inherit !important;
+}
+
 .post article .profile {
-  width: 42%;
-  max-width: 140px;
+  width: 50.4%;
+  max-width: 168px;
 }
 
 .post article .profile.float-right {
@@ -189,7 +193,7 @@
 }
 
 .about-recent-publications ol.bibliography li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 /* News index */
@@ -382,6 +386,20 @@
 }
 
 /* Publication listing */
+.publications h2.bibliography {
+  margin: 48px 0 16px;
+  padding-top: 0;
+  border-top: 0;
+  color: var(--global-text-color);
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.publications h2.bibliography:first-child {
+  margin-top: 32px;
+}
+
 .publications ol.bibliography li .abbr {
   display: flex;
   align-items: flex-start;
@@ -389,7 +407,62 @@
 }
 
 .publications ol.bibliography > li {
-  padding: 8px 0;
+  position: relative;
+  isolation: isolate;
+  min-height: 112px;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: 18px 12px;
+  border-bottom: 1px solid var(--global-divider-color);
+  transition:
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.publications ol.bibliography > li:first-child {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.publications ol.bibliography > li::before {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: -42%;
+  width: 42%;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(0, 86, 179, 0.12), transparent);
+  opacity: 0;
+}
+
+.publications ol.bibliography > li:hover {
+  background-color: rgba(0, 86, 179, 0.025);
+}
+
+.publications ol.bibliography > li:hover::before {
+  animation: news-highlight-sweep 620ms ease-out forwards;
+}
+
+.publications ol.bibliography > li > *:not(.publication-index-link) {
+  position: relative;
+  z-index: 1;
+}
+
+.publication-index-link {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  cursor: pointer;
+}
+
+.publication-index-link:focus-visible {
+  outline: 2px solid #0056b3;
+  outline-offset: -4px;
+}
+
+.publications ol.bibliography li .links {
+  display: none;
 }
 
 .publications ol.bibliography li .abbr abbr.badge {
@@ -439,9 +512,104 @@
 
 @media (min-width: 576px) {
   .post article .profile {
-    width: 15%;
-    max-width: 150px;
+    width: 18%;
+    max-width: 180px;
   }
+}
+
+/* Publication detail */
+.publication-detail {
+  max-width: 960px;
+}
+
+.publication-detail-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--content-tag-width);
+  min-height: 26px;
+  margin-bottom: 20px;
+  padding: 3px 9px;
+  color: #0056b3;
+  background: rgba(0, 86, 179, 0.055);
+  font-size: var(--content-tag-font-size);
+  font-weight: 400;
+}
+
+.publication-detail-authors {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.publication-detail-authors em {
+  border-bottom: 1px solid;
+  font-style: normal;
+}
+
+.publication-detail-venue {
+  margin-bottom: 32px;
+  color: var(--global-text-color-light);
+  font-size: 16px;
+}
+
+.publication-detail-description {
+  padding-top: 24px;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 18px;
+}
+
+.publication-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.publication-detail-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 72px;
+  padding: 7px 14px;
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.publication-detail-button:hover,
+.publication-detail-button:focus-visible {
+  border-color: #0056b3;
+  color: #0056b3;
+  background: rgba(0, 86, 179, 0.035);
+  text-decoration: none;
+}
+
+.publication-detail-button.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+.publication-detail-button.is-disabled:hover {
+  border-color: var(--global-divider-color);
+  color: var(--global-text-color);
+  background: transparent;
+}
+
+.publication-detail-back {
+  display: inline-block;
+  margin-top: 40px;
+  color: var(--global-text-color-light);
+  font-size: 14px;
+}
+
+.publication-detail-back:hover {
+  color: #0056b3;
 }
 
 /* Project listing */
