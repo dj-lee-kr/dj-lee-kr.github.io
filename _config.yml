@@ -530,7 +530,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "/assets/css/site-overrides.css?v=18"
+      fonts: "/assets/css/site-overrides.css?v=19"
   highlightjs:
     integrity:
       css:

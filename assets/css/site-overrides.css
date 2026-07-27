@@ -6,6 +6,8 @@
   --about-body-font-size: 16px;
   --content-tag-width: 152px;
   --content-tag-font-size: 16px;
+  --content-title-font-size: 18px;
+  --content-title-font-weight: 400;
 }
 
 #light-toggle-system,
@@ -134,29 +136,20 @@
 
 .about-more-link {
   display: inline-flex;
-  gap: 0.4rem;
   align-items: center;
   padding: 0;
   border: 0;
   color: var(--global-text-color-light);
   font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
   transition: color 180ms ease;
 }
 
-.about-more-link svg {
-  width: 1rem;
-  height: 1rem;
-  transition: transform 180ms ease;
-}
-
-.about-more-link:hover {
-  color: #0056b3;
+.about-more-link:hover,
+.about-more-link:focus-visible {
+  color: #0056b3 !important;
   text-decoration: none;
-}
-
-.about-more-link:hover svg {
-  transform: translateX(0.15rem);
 }
 
 .news-index--compact {
@@ -177,7 +170,8 @@
 .news-index--compact .news-index-summary {
   min-height: 0;
   margin-bottom: 0.3rem;
-  font-size: 17px;
+  font-size: var(--content-title-font-size);
+  font-weight: var(--content-title-font-weight);
   -webkit-line-clamp: 1;
   line-clamp: 1;
 }
@@ -302,8 +296,8 @@
   min-height: 3rem;
   margin: 0 0 0.55rem;
   overflow: hidden;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--content-title-font-size);
+  font-weight: var(--content-title-font-weight);
   line-height: 1.5;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -420,8 +414,8 @@
 }
 
 .publications ol.bibliography li .title {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: var(--content-title-font-size);
+  font-weight: var(--content-title-font-weight);
 }
 
 @media (min-width: 576px) {
@@ -689,7 +683,7 @@
   }
 
   .news-index-summary {
-    font-size: 18px;
+    font-size: var(--content-title-font-size);
   }
 
   .about-preview-sections {
@@ -714,7 +708,7 @@
   }
 
   .news-index--compact .news-index-summary {
-    font-size: 16px;
+    font-size: var(--content-title-font-size);
     -webkit-line-clamp: 2;
     line-clamp: 2;
   }
