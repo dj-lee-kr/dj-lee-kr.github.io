@@ -412,7 +412,7 @@ body .publications ol.bibliography > li {
   min-height: 112px;
   margin: 0;
   overflow: hidden;
-  padding: 18px 12px;
+  padding: 1.15rem 0.9rem;
   border-bottom: 1px solid var(--global-divider-color);
   transition:
     color 180ms ease,
