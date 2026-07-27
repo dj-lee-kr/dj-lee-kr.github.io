@@ -116,22 +116,4 @@ For research inquiries or collaboration opportunities, please feel free to conta
   </section>
 </div>
 
-<script>
-  document.querySelectorAll(".about-recent-publications .periodical em").forEach((element) => {
-    const firstNode = element.firstChild;
-
-    if (firstNode?.nodeType === Node.TEXT_NODE) {
-      firstNode.textContent = firstNode.textContent.replace(/^In\s+/, "");
-    }
-  });
-
-  document.querySelectorAll(".about-recent-publications .author").forEach((element) => {
-    if (!/[\u3131-\uD79D]/.test(element.textContent)) return;
-
-    const textNodes = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
-
-    while (textNodes.nextNode()) {
-      textNodes.currentNode.textContent = textNodes.currentNode.textContent.replace(/,?\s+and\s+/g, ", ");
-    }
-  });
-</script>
+<script src="{{ '/assets/js/publication-formatting.js' | relative_url }}?v=1"></script>
