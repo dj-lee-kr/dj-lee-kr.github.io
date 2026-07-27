@@ -39,3 +39,16 @@ document.querySelectorAll(".publications .author").forEach((element) => {
     textNode.replaceWith(fragment);
   });
 });
+
+document.querySelectorAll(".publications ol.bibliography > li").forEach((item) => {
+  const entry = item.querySelector(".col-sm-8[id]");
+  const title = entry?.querySelector(".title")?.textContent.trim();
+
+  if (!entry?.id || item.querySelector(".publication-index-link")) return;
+
+  const link = document.createElement("a");
+  link.className = "publication-index-link";
+  link.href = `/publications/${encodeURIComponent(entry.id)}/`;
+  link.setAttribute("aria-label", `View publication details: ${title || entry.id}`);
+  item.append(link);
+});
