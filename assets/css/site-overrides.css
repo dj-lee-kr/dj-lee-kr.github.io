@@ -386,7 +386,7 @@
 }
 
 /* Publication listing */
-.publications h2.bibliography {
+body .publications h2.bibliography {
   margin: 48px 0 16px;
   padding-top: 0;
   border-top: 0;
@@ -396,7 +396,7 @@
   text-align: left;
 }
 
-.publications h2.bibliography:first-child {
+body .publications h2.bibliography:first-child {
   margin-top: 32px;
 }
 
