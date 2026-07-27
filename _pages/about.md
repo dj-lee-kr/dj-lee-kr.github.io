@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: M.S. Student in Electrical and Information Engineering at SeoulTech
+subtitle: M.S. Student, Electrical and Information Engineering, Seoul National University of Science and Technology (SeoulTech)
 
 profile:
   align: right
@@ -29,7 +29,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I am an M.S. student in the Department of Electrical and Information Engineering at [Seoul National University of Science and Technology (SeoulTech)](https://www.seoultech.ac.kr/). I am a member of the [Intelligent Digital Systems Design Laboratory (IDSL)](https://idsl.seoultech.ac.kr/), where I have been conducting research since January 2024. I received my B.S. degree in Electrical and Information Engineering from SeoulTech in February 2025.
+Hi! I am an M.S. student in the Department of Electrical and Information Engineering at [SeoulTech](https://www.seoultech.ac.kr/) and a member of the [Intelligent Digital Systems Design Laboratory (IDSL)](https://idsl.seoultech.ac.kr/), where I have been conducting research since January 2024. I received my B.S. degree in Electrical and Information Engineering from SeoulTech in February 2025.
 
 My research interests lie in **efficient AI systems**, **AI accelerators**, **low-bit quantization**, and **digital hardware design**. I am particularly interested in algorithm–hardware co-design techniques that reduce the computation and memory costs of deep-learning models while preserving deployment efficiency on resource-constrained edge platforms.
 

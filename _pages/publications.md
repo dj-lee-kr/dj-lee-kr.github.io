@@ -14,3 +14,13 @@ nav_order: 4
 {% bibliography %}
 
 </div>
+
+<script>
+  document.querySelectorAll(".publications .periodical em").forEach((element) => {
+    const firstNode = element.firstChild;
+
+    if (firstNode?.nodeType === Node.TEXT_NODE) {
+      firstNode.textContent = firstNode.textContent.replace(/^In\s+/, "");
+    }
+  });
+</script>

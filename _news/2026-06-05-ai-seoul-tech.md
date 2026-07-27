@@ -4,7 +4,7 @@ title: Selected for the 2026 AI Seoul Tech Research Support Program
 date: 2026-06-05
 permalink: /news/2026-ai-seoul-tech/
 inline: false
-tag: scholarship
+tag: Scholarship
 summary: Selected as a master's researcher for the 2026 AI Seoul Tech Research Support Program supported by the Seoul Future Foundation.
 related_posts: false
 ---
