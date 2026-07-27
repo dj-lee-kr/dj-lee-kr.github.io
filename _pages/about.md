@@ -110,7 +110,7 @@ For research inquiries or collaboration opportunities, please feel free to conta
     </div>
 
     <div class="publications about-recent-publications">
-      {% bibliography --max 3 %}
+      {% bibliography --group_by none --max 3 %}
     </div>
 
   </section>
