@@ -95,6 +95,96 @@
   font-weight: 500;
 }
 
+/* News index */
+.news-index {
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.news-index-item {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr) auto;
+  gap: 1.75rem;
+  align-items: center;
+  min-height: 7.75rem;
+  padding: 1.15rem 0.9rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.news-index li:first-child .news-index-item {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.news-index-item:hover {
+  color: var(--global-text-color);
+  background: linear-gradient(100deg, rgba(0, 86, 179, 0.1), rgba(0, 86, 179, 0.02));
+  text-decoration: none;
+}
+
+.news-index-item:focus-visible {
+  outline: 2px solid #0056b3;
+  outline-offset: 3px;
+}
+
+.news-index-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-content: center;
+}
+
+.news-index-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.65rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  color: #0056b3;
+  background: rgba(0, 86, 179, 0.1);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.news-index-content {
+  min-width: 0;
+}
+
+.news-index-summary {
+  display: -webkit-box;
+  min-height: 3rem;
+  margin: 0 0 0.55rem;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.news-index-content time {
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.news-index-arrow {
+  color: #0056b3;
+  font-size: 1.25rem;
+  transition: transform 180ms ease;
+}
+
+.news-index-item:hover .news-index-arrow {
+  transform: translateX(0.2rem);
+}
+
 @media (min-width: 576px) {
   .post article .profile {
     width: 15%;
@@ -310,6 +400,20 @@
 }
 
 @media (max-width: 767.98px) {
+  .news-index-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.75rem 1rem;
+    padding: 1.15rem 0.35rem;
+  }
+
+  .news-index-tags {
+    grid-column: 1 / -1;
+  }
+
+  .news-index-summary {
+    font-size: 0.95rem;
+  }
+
   .project-meta-grid,
   .project-focus-grid {
     grid-template-columns: 1fr;
