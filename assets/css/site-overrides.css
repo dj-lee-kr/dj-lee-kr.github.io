@@ -212,7 +212,7 @@
   align-items: center;
   min-height: 7.75rem;
   overflow: hidden;
-  padding: 1.15rem 0.9rem;
+  padding: 28px 0.9rem;
   border-bottom: 1px solid var(--global-divider-color);
   color: var(--global-text-color);
   transition:
@@ -412,7 +412,7 @@ body .publications ol.bibliography > li {
   min-height: 112px;
   margin: 0;
   overflow: hidden;
-  padding: 1.15rem 0.9rem;
+  padding: 28px 0.9rem;
   border-bottom: 1px solid var(--global-divider-color);
   transition:
     color 180ms ease,
@@ -843,7 +843,7 @@ body .publications ol.bibliography > li {
   .news-index-item {
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 0.75rem 1rem;
-    padding: 1.15rem 0.35rem;
+    padding: 28px 0.35rem;
   }
 
   .news-index-tag {
