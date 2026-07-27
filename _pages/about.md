@@ -6,7 +6,7 @@ subtitle: M.S. Student in Electrical and Information Engineering at SeoulTech
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: dongjun_profile_nobg.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <div class="profile-links" aria-label="Profile links">
