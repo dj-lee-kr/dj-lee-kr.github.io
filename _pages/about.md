@@ -31,9 +31,11 @@ latest_posts:
 
 <div class="about-intro" markdown="1">
 
-Hi! I am an M.S. student at the [Intelligent Digital Systems Design Laboratory (IDSL)](https://idsl.seoultech.ac.kr/) at [SeoulTech](https://www.seoultech.ac.kr/), advised by [Prof. Hyun Kim](https://scholar.google.com/citations?user=mCuJP1UAAAAJ&hl=ko). I received my B.S. degree in Electrical and Information Engineering from [SeoulTech](https://eie.seoultech.ac.kr/) in February 2025.
+Hi! I am an M.S. student at the [Intelligent Digital Systems Design Laboratory (IDSL)](https://idsl.seoultech.ac.kr/) at [SeoulTech](https://www.seoultech.ac.kr/), advised by [Prof. Hyun Kim](https://scholar.google.com/citations?user=mCuJP1UAAAAJ&hl=ko).
+I received my B.S. degree in Electrical and Information Engineering from [SeoulTech](https://eie.seoultech.ac.kr/) in February 2025.
 
-My research interests include **efficient AI systems**, **AI accelerators**, and **digital system design**. In particular, I am interested in algorithm–hardware co-design for reducing the computational and memory costs of AI models and enabling their efficient deployment on resource-constrained hardware platforms.
+My research interests include **efficient AI systems**, **AI accelerators**, and **digital system design**.
+In particular, I am interested in algorithm–hardware co-design for reducing the computational and memory costs of AI models and enabling their efficient deployment on resource-constrained hardware platforms.
 
 To learn more about my research, please visit the [Publication page](https://dj-lee-kr.github.io/publications/) or my [Google Scholar profile](https://scholar.google.com/citations?user=fOEy_d0AAAAJ&hl=ko).
 
