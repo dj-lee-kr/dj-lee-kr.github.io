@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publication
-description: Journal and conference publications. * indicates equal contribution.
+description: "* indicates equal contribution."
 nav: true
 nav_order: 4
 ---
