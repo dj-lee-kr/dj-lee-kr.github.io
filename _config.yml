@@ -16,8 +16,14 @@ footer_text: >
         <strong class="site-footer-name">Dongjun Lee</strong>
         <p class="site-footer-role">M.S. Student in Electrical and Information Engineering<br>Seoul National University of Science and Technology</p>
         <div class="site-footer-contact">
-          <a href="mailto:dj.lee@seoultech.ac.kr">dj.lee@seoultech.ac.kr</a>
-          <a href="https://dj-lee-kr.github.io/">dj-lee-kr.github.io</a>
+          <div class="site-footer-contact-row">
+            <span>Mail</span>
+            <a href="mailto:dj.lee@seoultech.ac.kr">dj.lee@seoultech.ac.kr</a>
+          </div>
+          <div class="site-footer-contact-row">
+            <span>Web</span>
+            <a href="https://dj-lee-kr.github.io/">dj-lee-kr.github.io</a>
+          </div>
         </div>
       </div>
       <nav class="site-footer-social" aria-label="Profile links">
@@ -548,7 +554,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "/assets/css/site-overrides.css?v=39"
+      fonts: "/assets/css/site-overrides.css?v=40"
   highlightjs:
     integrity:
       css:
