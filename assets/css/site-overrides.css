@@ -68,6 +68,18 @@ html:not([data-theme="dark"]) {
   font-weight: inherit !important;
 }
 
+.navbar .navbar-brand {
+  width: 100px;
+  height: 44px;
+  padding: 0;
+  background: url("/assets/img/logo_djlee.png") left center / contain no-repeat;
+  font-size: 0 !important;
+}
+
+html[data-theme="dark"] .navbar .navbar-brand {
+  filter: brightness(0) invert(1);
+}
+
 .navbar .navbar-menu-list {
   column-gap: 12px;
 }
@@ -1074,8 +1086,8 @@ html[data-theme="dark"] footer.sticky-bottom {
 }
 
 footer.sticky-bottom > .container {
-  padding-top: 52px;
-  padding-bottom: 32px;
+  padding-top: 44px;
+  padding-bottom: 28px;
   font-size: 0;
   text-align: left;
 }
@@ -1112,7 +1124,7 @@ footer.sticky-bottom > .container {
 .site-footer-contact {
   display: grid;
   gap: 8px;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .site-footer-contact-row {
@@ -1146,8 +1158,8 @@ footer.sticky-bottom > .container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 56px;
-  padding-top: 24px;
+  margin-top: 40px;
+  padding-top: 20px;
   border-top: 1px solid var(--global-divider-color);
 }
 
@@ -1202,8 +1214,8 @@ footer.sticky-bottom > .container {
   }
 
   footer.sticky-bottom > .container {
-    padding-top: 44px;
-    padding-bottom: 28px;
+    padding-top: 36px;
+    padding-bottom: 24px;
   }
 
   .site-footer-top {
@@ -1220,7 +1232,7 @@ footer.sticky-bottom > .container {
   }
 
   .site-footer-bottom {
-    margin-top: 40px;
+    margin-top: 32px;
   }
 
   body .publications h2.bibliography {
