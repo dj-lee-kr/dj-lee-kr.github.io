@@ -7,6 +7,7 @@ program: 2025 Promising Young Investigator Teams (PYIT) Research Support Program
 funding_agency: Seoul National University of Science and Technology
 period: Jun. 2025 – Aug. 2025
 start_date: 2025-06-09
+role: Co-Researcher
 description: Research on prefetching, compression, and hardware-friendly acceleration for efficient MoE inference.
 importance: 2
 category: research
@@ -15,6 +16,7 @@ permalink: /projects/pyit-moe-acceleration/
 
 <div class="project-detail">
   <header class="project-detail-header">
+    <span class="project-detail-role">{{ page.role }}</span>
     <h1 class="project-detail-title-ko" lang="ko">{{ page.title_ko }}</h1>
     <p class="project-detail-title-en">{{ page.title_en }}</p>
   </header>

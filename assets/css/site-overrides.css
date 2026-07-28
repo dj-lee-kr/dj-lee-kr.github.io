@@ -19,12 +19,6 @@
   --publication-detail-button-font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
 html:not([data-theme="dark"]) {
   --global-text-color: #0f141b !important;
 }
@@ -583,8 +577,14 @@ body .publications ol.bibliography > li {
 }
 
 .publications ol.bibliography li .title {
+  display: -webkit-box;
+  min-height: 3rem;
+  overflow: hidden;
   font-size: var(--content-title-font-size);
   font-weight: var(--content-title-font-weight);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 
 .publications ol.bibliography li .periodical {

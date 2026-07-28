@@ -86,7 +86,7 @@ document.querySelectorAll(".publications ol.bibliography > li").forEach((item) =
   link.setAttribute("aria-label", `View publication details: ${title || entry.id}`);
   item.append(link);
 
-  const resources = publicationResources[entry.id] || [];
+  const resources = (publicationResources[entry.id] || []).slice(0, 2);
 
   if (resources.length > 0) {
     const resourceList = document.createElement("div");

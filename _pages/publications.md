@@ -15,4 +15,4 @@ nav_order: 4
 
 </div>
 
-<script src="{{ '/assets/js/publication-formatting.js' | relative_url }}?v=4"></script>
+<script src="{{ '/assets/js/publication-formatting.js' | relative_url }}?v=5"></script>
