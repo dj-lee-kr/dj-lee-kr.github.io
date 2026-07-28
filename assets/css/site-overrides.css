@@ -112,7 +112,7 @@ html:not([data-theme="dark"]) {
 
 .post-header .desc {
   color: var(--global-text-color);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* About body and recent content previews */
