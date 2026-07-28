@@ -15,19 +15,17 @@ nav_order: 3
       <article class="project-index-card">
         <a class="project-index-card-link" href="{{ project.url | relative_url }}" aria-label="View project: {{ project.title_en | escape }}">
           <div class="project-index-topline">
-            <span class="project-index-number">Project 0{{ forloop.index }}</span>
+            <span class="project-index-number">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
             {% if project.role %}
               <span class="project-index-role">{{ project.role }}</span>
             {% endif %}
           </div>
 
           <div class="project-index-field project-index-field--title">
-            <span class="project-index-label">Project title · Korean</span>
             <h2 lang="ko">{{ project.title_ko }}</h2>
           </div>
 
           <div class="project-index-field project-index-field--english">
-            <span class="project-index-label">Project title · English</span>
             <p>{{ project.title_en }}</p>
           </div>
 
@@ -40,11 +38,9 @@ nav_order: 3
               <span class="project-index-label">Funding agency</span>
               <p>{{ project.funding_agency }}</p>
             </div>
-            <div class="project-index-field">
-              <span class="project-index-label">Project period</span>
-              <p>{{ project.period }}</p>
-            </div>
           </div>
+
+          <p class="project-index-period">{{ project.period }}</p>
         </a>
       </article>
     {% endfor %}
