@@ -1074,7 +1074,7 @@ html[data-theme="dark"] footer.sticky-bottom {
 }
 
 footer.sticky-bottom > .container {
-  padding-top: 60px;
+  padding-top: 52px;
   padding-bottom: 32px;
   font-size: 0;
   text-align: left;
@@ -1087,7 +1087,7 @@ footer.sticky-bottom > .container {
 
 .site-footer-top {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(210px, 0.6fr) minmax(210px, 0.6fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 64px;
   align-items: start;
 }
@@ -1098,43 +1098,33 @@ footer.sticky-bottom > .container {
   align-items: flex-start;
 }
 
-.site-footer-eyebrow,
-.site-footer-label {
-  display: block;
-  color: var(--global-text-color-light);
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.site-footer-eyebrow {
-  margin-bottom: 12px;
-}
-
 .site-footer-name {
-  font-size: 34px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 300;
 }
 
 .site-footer-role {
-  margin: 14px 0 0;
+  margin: 10px 0 0;
   color: var(--global-text-color-light);
   font-size: 15px;
 }
 
-.site-footer-label {
-  margin-bottom: 12px;
+.site-footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin-top: 24px;
 }
 
-.site-footer-info a {
+.site-footer-contact a {
   color: var(--global-text-color);
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   transition: color 180ms ease;
 }
 
-.site-footer-info a:hover,
-.site-footer-info a:focus-visible {
+.site-footer-contact a:hover,
+.site-footer-contact a:focus-visible {
   color: #0056b3;
   text-decoration: none;
 }
@@ -1142,7 +1132,7 @@ footer.sticky-bottom > .container {
 .site-footer-bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 56px;
   padding-top: 24px;
   border-top: 1px solid var(--global-divider-color);
@@ -1157,6 +1147,7 @@ footer.sticky-bottom > .container {
   display: flex;
   gap: 14px;
   align-items: center;
+  justify-self: end;
 }
 
 .site-footer-social a {
@@ -1204,17 +1195,23 @@ footer.sticky-bottom > .container {
 
   .site-footer-top {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
   }
 
   .site-footer-name {
-    font-size: 30px;
+    font-size: 26px;
+  }
+
+  .site-footer-contact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-footer-social {
+    justify-self: start;
   }
 
   .site-footer-bottom {
-    align-items: flex-start;
-    flex-direction: column-reverse;
-    gap: 22px;
     margin-top: 40px;
   }
 
