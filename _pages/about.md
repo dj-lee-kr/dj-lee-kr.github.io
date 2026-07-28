@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # profile links are displayed at the bottom of the About page
+social: false # profile links are included in the site footer
 
 announcements:
   enabled: false # includes a list of news items

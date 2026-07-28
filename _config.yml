@@ -10,9 +10,32 @@ contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal website and CV of Dongjun Lee.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  <div class="site-footer-shell">
+    <div class="site-footer-top">
+      <div class="site-footer-brand">
+        <span class="site-footer-eyebrow">Personal academic site</span>
+        <strong class="site-footer-name">Dongjun Lee</strong>
+        <p class="site-footer-role">M.S. Student in Electrical and Information Engineering<br>Seoul National University of Science and Technology</p>
+      </div>
+      <div class="site-footer-info">
+        <span class="site-footer-label">Email</span>
+        <a href="mailto:dj.lee@seoultech.ac.kr">dj.lee@seoultech.ac.kr</a>
+      </div>
+      <div class="site-footer-info">
+        <span class="site-footer-label">Website</span>
+        <a href="https://dj-lee-kr.github.io/">dj-lee-kr.github.io</a>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <span class="site-footer-copyright">&copy; 2026 Dongjun Lee. All rights reserved.</span>
+      <nav class="site-footer-social" aria-label="Profile links">
+        <a href="/assets/rendercv/rendercv_output/Dongjun_Lee_CV.pdf" title="CV" aria-label="CV"><i class="ai ai-cv"></i></a>
+        <a href="https://scholar.google.com/citations?user=fOEy_d0AAAAJ" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://github.com/dj-lee-kr" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/dongjun-lee-217bb1361/" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </nav>
+    </div>
+  </div>
 keywords: Dongjun Lee, CV, portfolio # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -530,7 +553,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "/assets/css/site-overrides.css?v=37"
+      fonts: "/assets/css/site-overrides.css?v=38"
   highlightjs:
     integrity:
       css:
