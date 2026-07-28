@@ -6,6 +6,7 @@ title_en: Multiplier-Free Hardware Platform Design Based on Ultra-Low Precision 
 program: Master's Student Research Encouragement Grant
 funding_agency: National Research Foundation of Korea (NRF)
 period: Sep. 2025 – Aug. 2026
+start_date: 2025-09-01
 role: Principal Investigator
 description: An algorithm–hardware co-design project for efficient Mixture-of-Experts inference.
 importance: 1

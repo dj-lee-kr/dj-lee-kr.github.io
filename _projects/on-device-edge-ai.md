@@ -6,7 +6,7 @@ title_en: Development of AI Accelerator-Based Edge AI Application for On-Device 
 program: LINC 3.0 Industry-Academia Joint Technology Development Project
 funding_agency: SeoulTech LINC 3.0 Project Group
 period: May 2024 – Nov. 2024
-role: Researcher
+start_date: 2024-05-01
 description: Development of lightweight AI models and accelerator-based edge applications for on-device AI.
 importance: 4
 category: research
@@ -15,7 +15,6 @@ permalink: /projects/on-device-edge-ai/
 
 <div class="project-detail">
   <header class="project-detail-header">
-    <span class="project-detail-role">{{ page.role }}</span>
     <h1 class="project-detail-title-ko" lang="ko">{{ page.title_ko }}</h1>
     <p class="project-detail-title-en">{{ page.title_en }}</p>
   </header>

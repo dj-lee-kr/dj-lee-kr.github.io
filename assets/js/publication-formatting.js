@@ -90,6 +90,7 @@ document.querySelectorAll(".publications ol.bibliography > li").forEach((item) =
 
   if (resources.length > 0) {
     const resourceList = document.createElement("div");
+    const tagColumn = item.querySelector(".abbr");
     resourceList.className = "publication-index-resources";
     resourceList.setAttribute("aria-label", "Publication resources");
 
@@ -107,6 +108,6 @@ document.querySelectorAll(".publications ol.bibliography > li").forEach((item) =
       resourceList.append(resourceLink);
     });
 
-    entry.append(resourceList);
+    (tagColumn || entry).append(resourceList);
   }
 });

@@ -6,8 +6,9 @@ title_en: Development of Secure, High-Performance, and High-Connectivity Chiplet
 program: 민관공동투자반도체고급인력양성
 funding_agency: Ministry of Trade, Industry and Energy (MOTIE)
 period: Apr. 2025 – Dec. 2027
+start_date: 2025-04-01
 description: Research on secure, high-performance, and highly connected chiplet-based SoC architectures.
-importance: 2
+importance: 3
 category: research
 permalink: /projects/secure-chiplet-soc/
 ---

@@ -86,4 +86,4 @@ For research inquiries or collaboration opportunities, please feel free to conta
   </section>
 </div>
 
-<script src="{{ '/assets/js/publication-formatting.js' | relative_url }}?v=3"></script>
+<script src="{{ '/assets/js/publication-formatting.js' | relative_url }}?v=4"></script>
