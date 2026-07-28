@@ -8,15 +8,9 @@ profile:
   align: right
   image: dongjun_profile_nobg.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <div class="profile-links" aria-label="Profile links">
-      <a href="/assets/rendercv/rendercv_output/Dongjun_Lee_CV.pdf" title="CV" aria-label="CV"><i class="ai ai-cv"></i></a>
-      <a href="https://github.com/dj-lee-kr" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/dongjun-lee-217bb1361/" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # profile links are displayed directly below the profile image
+social: true # profile links are displayed at the bottom of the About page
 
 announcements:
   enabled: false # includes a list of news items

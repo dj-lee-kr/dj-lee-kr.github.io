@@ -26,8 +26,8 @@ html:not([data-theme="dark"]) {
 #light-toggle-system,
 #light-toggle-dark,
 #light-toggle-light {
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 1.215rem;
+  height: 1.215rem;
   color: inherit;
   font-size: 0;
   vertical-align: middle;
@@ -68,6 +68,18 @@ html:not([data-theme="dark"]) {
   font-weight: inherit !important;
 }
 
+.navbar .navbar-menu-list {
+  column-gap: 12px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 400 !important;
+}
+
+.navbar .navbar-nav .nav-item.active > .nav-link {
+  color: #0056b3 !important;
+}
+
 /* About profile */
 .post:has(> article .about-intro) .post-title .font-weight-bold {
   font-weight: inherit !important;
@@ -98,22 +110,32 @@ html:not([data-theme="dark"]) {
   text-align: center;
 }
 
-.profile-links {
+.post .social {
+  clear: both;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.post .social .contact-icons {
   display: flex;
   gap: 0.65rem;
   align-items: center;
   justify-content: center;
+  font-size: 0;
 }
 
-.post article .profile .profile-links a {
+.post .social .contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--global-text-color-light) !important;
   font-size: 32px;
   line-height: 1;
   transition: color 180ms ease;
 }
 
-.post article .profile .profile-links a:hover,
-.post article .profile .profile-links a:focus-visible {
+.post .social .contact-icons a:hover,
+.post .social .contact-icons a:focus-visible {
   color: #0056b3 !important;
   text-decoration: none;
 }
@@ -505,8 +527,8 @@ body .publications ol.bibliography > li {
 .publication-index-resources {
   position: relative;
   z-index: 3;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   width: 100%;
   max-height: 0;
@@ -535,7 +557,8 @@ body .publications ol.bibliography > li {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 64px;
+  width: 100%;
+  min-width: 0;
   padding: 5px 11px;
   border: 1px solid var(--global-divider-color);
   color: var(--global-text-color-light);
@@ -546,6 +569,10 @@ body .publications ol.bibliography > li {
   transition:
     border-color 180ms ease,
     color 180ms ease;
+}
+
+.publication-index-resource:only-child {
+  grid-column: 1 / -1;
 }
 
 .publication-index-resource:hover,
