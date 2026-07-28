@@ -1,91 +1,71 @@
 ---
 layout: page
-title: Multiplier-Free Hardware Platform for Expert Layers
-description: NRF Master's Student Research Encouragement Grant · Sep. 2025 – Aug. 2026
+title: Multiplier-Free Hardware Platform Design Based on Ultra-Low Precision Quantization for Expert Layers
+title_ko: Expert Layer를 위한 초저정밀도 양자화 기반 Multiplier-Free 하드웨어 플랫폼 설계
+title_en: Multiplier-Free Hardware Platform Design Based on Ultra-Low Precision Quantization for Expert Layers
+program: Master's Student Research Encouragement Grant
+funding_agency: National Research Foundation of Korea (NRF)
+period: Sep. 2025 – Aug. 2026
+role: Principal Investigator
+description: An algorithm–hardware co-design project for efficient Mixture-of-Experts inference.
 importance: 1
 category: research
+permalink: /projects/multiplier-free-expert-layer/
 ---
 
-<div class="project-hero">
-  <p class="project-kicker">NRF Research Grant · 2025–2026</p>
-  <h2>Multiplier-Free Hardware Platform Design Based on Ultra-Low Precision Quantization for Expert Layers</h2>
-  <p class="project-lead">
-    An algorithm–hardware co-design project for efficient Mixture-of-Experts inference in resource-constrained environments.
-  </p>
-  <div class="project-meta-grid">
+<div class="project-detail">
+  <header class="project-detail-header">
+    <span class="project-detail-role">{{ page.role }}</span>
+    <h1 class="project-detail-title-ko" lang="ko">{{ page.title_ko }}</h1>
+    <p class="project-detail-title-en">{{ page.title_en }}</p>
+  </header>
+
+  <dl class="project-detail-meta">
     <div>
-      <span>Program</span>
-      <strong>Master's Student Research Encouragement Grant</strong>
+      <dt>Program</dt>
+      <dd>{{ page.program }}</dd>
     </div>
     <div>
-      <span>Funding agency</span>
-      <strong>National Research Foundation of Korea</strong>
+      <dt>Funding agency</dt>
+      <dd>{{ page.funding_agency }}</dd>
     </div>
     <div>
-      <span>Project period</span>
-      <strong>Sep. 2025 – Aug. 2026</strong>
+      <dt>Project period</dt>
+      <dd>{{ page.period }}</dd>
     </div>
-  </div>
-</div>
+  </dl>
 
-## Research focus
-
-This project develops an ultra-low-precision quantization and encoding method for Mixture-of-Experts (MoE) models and a multiplier-free hardware architecture optimized for the proposed method. The goal is to reduce memory and computation costs while enabling efficient deployment in edge and processing-in-memory environments.
-
-<div class="project-focus-grid">
-  <div class="project-focus-card">
-    <i class="fa-solid fa-compress" aria-hidden="true"></i>
-    <h3>Ultra-low precision</h3>
-    <p>Ternary and low-bit quantization with a target compression ratio of at least 10× over FP16.</p>
-  </div>
-  <div class="project-focus-card">
-    <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
-    <h3>Efficient encoding</h3>
-    <p>Permutation-based weight reordering to increase repeated patterns and improve compression efficiency.</p>
-  </div>
-  <div class="project-focus-card">
-    <i class="fa-solid fa-microchip" aria-hidden="true"></i>
-    <h3>Multiplier-free hardware</h3>
-    <p>MUX- and inverter-based processing elements with a pipelined dataflow for efficient MoE inference.</p>
-  </div>
-</div>
-
-## Research roadmap
-
-<div class="project-timeline">
-  <section>
-    <div class="project-phase">Phase 01</div>
-    <div>
-      <h3>Quantization and architecture design</h3>
-      <p class="project-period">September 2025 – February 2026</p>
-      <ul>
-        <li>Analyze memory and computation bottlenecks in MoE expert layers.</li>
-        <li>Implement and evaluate ultra-low-precision quantization and encoding methods in PyTorch.</li>
-        <li>Design the processing-element architecture and pipelined dataflow.</li>
-      </ul>
-    </div>
-  </section>
-  <section>
-    <div class="project-phase">Phase 02</div>
-    <div>
-      <h3>RTL implementation and evaluation</h3>
-      <p class="project-period">March 2026 – August 2026</p>
-      <ul>
-        <li>Implement the multiplier-free accelerator in RTL.</li>
-        <li>Perform simulation, synthesis, timing optimization, and on-board verification.</li>
-        <li>Evaluate accuracy, resource utilization, memory reduction, and energy efficiency.</li>
-      </ul>
-    </div>
-  </section>
-</div>
-
-<div class="project-outcome">
-  <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
-  <div>
-    <span>Target outcome</span>
+  <section class="project-detail-section">
+    <h2>Overview</h2>
     <p>
-      A hardware-friendly MoE compression method and accelerator architecture supporting high-performance,
-      low-power inference with at least 50% fewer multiplier DSP resources.
+      This project develops ultra-low-precision quantization and encoding methods together with a multiplier-free
+      hardware architecture for efficient Mixture-of-Experts inference. The objective is to reduce model storage and
+      computation costs while retaining deployability in resource-constrained edge and processing-in-memory systems.
     </p>
+  </section>
+
+  <section class="project-detail-section">
+    <h2>Research focus</h2>
+    <ol class="project-detail-focus">
+      <li>
+        <span>01</span>
+        <h3>Ultra-low-precision quantization</h3>
+        <p>Develop ternary and low-bit quantization methods for compact expert-layer representations.</p>
+      </li>
+      <li>
+        <span>02</span>
+        <h3>Efficient encoding</h3>
+        <p>Reorder and encode weights to increase repeated patterns and reduce memory traffic.</p>
+      </li>
+      <li>
+        <span>03</span>
+        <h3>Multiplier-free hardware</h3>
+        <p>Design MUX- and inverter-based processing elements with an efficient pipelined dataflow.</p>
+      </li>
+    </ol>
+  </section>
+
+  <div class="project-detail-back-row">
+    <a class="project-detail-back" href="{{ '/projects/' | relative_url }}">Back to Project</a>
   </div>
 </div>

@@ -5,60 +5,49 @@ permalink: /projects/
 description: Research projects in efficient AI systems and hardware.
 nav: true
 nav_order: 3
-horizontal: true
 ---
-
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
 
 {% assign sorted_projects = site.projects | sort: "importance" %}
 
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
+<div class="projects project-index">
+  <div class="project-index-track" role="region" aria-label="Research projects" tabindex="0">
     {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
+      <article class="project-index-card">
+        <a class="project-index-card-link" href="{{ project.url | relative_url }}" aria-label="View project: {{ project.title_en | escape }}">
+          <div class="project-index-topline">
+            <span class="project-index-number">Project 0{{ forloop.index }}</span>
+            {% if project.role %}
+              <span class="project-index-role">{{ project.role }}</span>
+            {% endif %}
+          </div>
+
+          <div class="project-index-field project-index-field--title">
+            <span class="project-index-label">Project title · Korean</span>
+            <h2 lang="ko">{{ project.title_ko }}</h2>
+          </div>
+
+          <div class="project-index-field project-index-field--english">
+            <span class="project-index-label">Project title · English</span>
+            <p>{{ project.title_en }}</p>
+          </div>
+
+          <div class="project-index-meta">
+            <div class="project-index-field">
+              <span class="project-index-label">Program</span>
+              <p>{{ project.program }}</p>
+            </div>
+            <div class="project-index-field">
+              <span class="project-index-label">Funding agency</span>
+              <p>{{ project.funding_agency }}</p>
+            </div>
+            <div class="project-index-field">
+              <span class="project-index-label">Project period</span>
+              <p>{{ project.period }}</p>
+            </div>
+          </div>
+        </a>
+      </article>
     {% endfor %}
-    </div>
+
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
 </div>
