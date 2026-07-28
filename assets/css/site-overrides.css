@@ -110,36 +110,6 @@ html:not([data-theme="dark"]) {
   text-align: center;
 }
 
-.post .social {
-  clear: both;
-  margin-top: 48px;
-  text-align: center;
-}
-
-.post .social .contact-icons {
-  display: flex;
-  gap: 0.65rem;
-  align-items: center;
-  justify-content: center;
-  font-size: 0;
-}
-
-.post .social .contact-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--global-text-color-light) !important;
-  font-size: 32px;
-  line-height: 1;
-  transition: color 180ms ease;
-}
-
-.post .social .contact-icons a:hover,
-.post .social .contact-icons a:focus-visible {
-  color: #0056b3 !important;
-  text-decoration: none;
-}
-
 .post-header .desc {
   color: var(--global-text-color);
   font-weight: 500;
@@ -174,7 +144,12 @@ html:not([data-theme="dark"]) {
 .about-preview-header h2 {
   margin: 0;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+#about-news-heading,
+#about-publication-heading {
+  margin-left: 0.9rem;
 }
 
 .about-more-link {
@@ -1085,6 +1060,123 @@ body .publications ol.bibliography > li {
   text-decoration: none;
 }
 
+/* Site footer */
+footer.sticky-bottom {
+  margin-top: 96px !important;
+  padding: 0;
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  background: rgba(0, 86, 179, 0.025);
+}
+
+html[data-theme="dark"] footer.sticky-bottom {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+footer.sticky-bottom > .container {
+  padding-top: 60px;
+  padding-bottom: 32px;
+  font-size: 0;
+  text-align: left;
+}
+
+.site-footer-shell {
+  color: var(--global-text-color);
+  font-size: 16px;
+}
+
+.site-footer-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(210px, 0.6fr) minmax(210px, 0.6fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.site-footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-footer-eyebrow,
+.site-footer-label {
+  display: block;
+  color: var(--global-text-color-light);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.site-footer-eyebrow {
+  margin-bottom: 12px;
+}
+
+.site-footer-name {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.site-footer-role {
+  margin: 14px 0 0;
+  color: var(--global-text-color-light);
+  font-size: 15px;
+}
+
+.site-footer-label {
+  margin-bottom: 12px;
+}
+
+.site-footer-info a {
+  color: var(--global-text-color);
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.site-footer-info a:hover,
+.site-footer-info a:focus-visible {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.site-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.site-footer-copyright {
+  color: var(--global-text-color-light);
+  font-size: 13px;
+}
+
+.site-footer-social {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.site-footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: var(--global-text-color-light) !important;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.site-footer-social a:hover,
+.site-footer-social a:focus-visible {
+  color: #0056b3 !important;
+  text-decoration: none;
+}
+
 @media (max-width: 1399.98px) {
   .project-index-controls {
     right: 8px;
@@ -1093,6 +1185,39 @@ body .publications ol.bibliography > li {
 }
 
 @media (max-width: 767.98px) {
+  #about-news-heading {
+    margin-left: 0.35rem;
+  }
+
+  #about-publication-heading {
+    margin-left: calc(0.9rem + 12px);
+  }
+
+  footer.sticky-bottom {
+    margin-top: 72px !important;
+  }
+
+  footer.sticky-bottom > .container {
+    padding-top: 44px;
+    padding-bottom: 28px;
+  }
+
+  .site-footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .site-footer-name {
+    font-size: 30px;
+  }
+
+  .site-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 22px;
+    margin-top: 40px;
+  }
+
   body .publications h2.bibliography {
     padding-left: calc(0.9rem + 12px);
   }
