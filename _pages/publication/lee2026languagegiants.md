@@ -17,11 +17,10 @@ This survey reviews structural optimization and compression techniques for reduc
   </div>
 
   <div class="content-detail-actions publication-detail-actions" aria-label="Publication resources">
-    <span class="publication-detail-button is-disabled" aria-disabled="true">Slide</span>
     <a class="publication-detail-button" href="{{ '/assets/pdf/publications/lee2026languagegiants-paper.pdf' | relative_url }}">PDF</a>
     <a class="publication-detail-button" href="https://www.sciencedirect.com/science/article/pii/S0893608026003618">Paper</a>
   </div>
 
-<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publication</a>
+<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
 
 </div>

@@ -17,11 +17,10 @@ AUTO-Accel is a software/hardware co-design framework that combines adaptive uni
   </div>
 
   <div class="content-detail-actions publication-detail-actions" aria-label="Publication resources">
-    <span class="publication-detail-button is-disabled" aria-disabled="true">Slide</span>
     <a class="publication-detail-button" href="{{ '/assets/pdf/publications/ko2026autoaccel-paper.pdf' | relative_url }}">PDF</a>
     <a class="publication-detail-button" href="https://link.springer.com/article/10.1007/s11554-025-01796-7">Paper</a>
   </div>
 
-<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publication</a>
+<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
 
 </div>

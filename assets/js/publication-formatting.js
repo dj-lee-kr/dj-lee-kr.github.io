@@ -40,6 +40,40 @@ document.querySelectorAll(".publications .author").forEach((element) => {
   });
 });
 
+const publicationResources = {
+  ko2024iqr: [
+    { label: "Poster", href: "/assets/pdf/publications/ko2024iqr-slides.pdf" },
+    { label: "PDF", href: "/assets/pdf/publications/ko2024iqr-paper.pdf" },
+    { label: "Paper", href: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11891036" },
+  ],
+  ko2026autoaccel: [
+    { label: "PDF", href: "/assets/pdf/publications/ko2026autoaccel-paper.pdf" },
+    { label: "Paper", href: "https://link.springer.com/article/10.1007/s11554-025-01796-7" },
+  ],
+  lee2025mobilenet: [
+    { label: "Poster", href: "/assets/pdf/publications/lee2025mobilenet-slides.pdf" },
+    { label: "PDF", href: "/assets/pdf/publications/lee2025mobilenet-paper.pdf" },
+  ],
+  lee2025poweroftwo: [
+    { label: "Poster", href: "/assets/pdf/publications/lee2025poweroftwo-slides.pdf" },
+    { label: "PDF", href: "/assets/pdf/publications/lee2025poweroftwo-paper.pdf" },
+    { label: "Paper", href: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12332106" },
+  ],
+  lee2026gatingweighted: [
+    { label: "Poster", href: "/assets/pdf/publications/lee2026gatingweighted-slides.pdf" },
+    { label: "PDF", href: "/assets/pdf/publications/lee2026gatingweighted-paper.pdf" },
+  ],
+  lee2026languagegiants: [
+    { label: "PDF", href: "/assets/pdf/publications/lee2026languagegiants-paper.pdf" },
+    { label: "Paper", href: "https://www.sciencedirect.com/science/article/pii/S0893608026003618" },
+  ],
+  lee2026moedeployment: [
+    { label: "Slide", href: "/assets/pdf/publications/lee2026moedeployment-slides.pdf" },
+    { label: "PDF", href: "/assets/pdf/publications/lee2026moedeployment-paper.pdf" },
+    { label: "Paper", href: "https://ieeexplore.ieee.org/abstract/document/11386441" },
+  ],
+};
+
 document.querySelectorAll(".publications ol.bibliography > li").forEach((item) => {
   const entry = item.querySelector(".col-sm-8[id]");
   const title = entry?.querySelector(".title")?.textContent.trim();
@@ -51,4 +85,28 @@ document.querySelectorAll(".publications ol.bibliography > li").forEach((item) =
   link.href = `/publications/${encodeURIComponent(entry.id)}/`;
   link.setAttribute("aria-label", `View publication details: ${title || entry.id}`);
   item.append(link);
+
+  const resources = publicationResources[entry.id] || [];
+
+  if (resources.length > 0) {
+    const resourceList = document.createElement("div");
+    resourceList.className = "publication-index-resources";
+    resourceList.setAttribute("aria-label", "Publication resources");
+
+    resources.forEach((resource) => {
+      const resourceLink = document.createElement("a");
+      resourceLink.className = "publication-index-resource";
+      resourceLink.href = resource.href;
+      resourceLink.textContent = resource.label;
+
+      if (/^https?:\/\//.test(resource.href)) {
+        resourceLink.target = "_blank";
+        resourceLink.rel = "noopener noreferrer";
+      }
+
+      resourceList.append(resourceLink);
+    });
+
+    entry.append(resourceList);
+  }
 });

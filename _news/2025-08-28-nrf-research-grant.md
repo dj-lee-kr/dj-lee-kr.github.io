@@ -14,6 +14,8 @@ related_posts: false
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
 </div>
 
+<a class="content-detail-back news-detail-back" href="{{ '/news/' | relative_url }}">Back to News</a>
+
 <div class="content-detail-content news-detail-content" markdown="1">
 
 I was selected for a new project under the **2025 Master's Student Research Encouragement Grant**, supported by the National Research Foundation of Korea (NRF).

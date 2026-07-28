@@ -17,11 +17,10 @@ Mixture-of-Experts 모델의 초저비트 양자화를 위해 게이팅 가중�
   </div>
 
   <div class="content-detail-actions publication-detail-actions" aria-label="Publication resources">
-    <a class="publication-detail-button" href="{{ '/assets/pdf/publications/lee2026gatingweighted-slides.pdf' | relative_url }}">Slide</a>
+    <a class="publication-detail-button" href="{{ '/assets/pdf/publications/lee2026gatingweighted-slides.pdf' | relative_url }}">Poster</a>
     <a class="publication-detail-button" href="{{ '/assets/pdf/publications/lee2026gatingweighted-paper.pdf' | relative_url }}">PDF</a>
-    <span class="publication-detail-button is-disabled" aria-disabled="true">Paper</span>
   </div>
 
-<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publication</a>
+<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
 
 </div>

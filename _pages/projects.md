@@ -2,7 +2,6 @@
 layout: page
 title: Project
 permalink: /projects/
-description: Research projects in efficient AI systems and hardware.
 nav: true
 nav_order: 3
 ---

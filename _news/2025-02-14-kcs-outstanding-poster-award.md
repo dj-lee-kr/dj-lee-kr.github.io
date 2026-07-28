@@ -18,4 +18,8 @@ related_posts: false
 
 I received the **On-site Outstanding Poster Award (현장우수포스터상)** at the **32nd Korean Conference on Semiconductors (KCS 2025)**.
 
+[View the publication details](/publications/lee2025mobilenet/)
+
 </div>
+
+<a class="content-detail-back news-detail-back" href="{{ '/news/' | relative_url }}">Back to News</a>

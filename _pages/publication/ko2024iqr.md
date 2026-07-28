@@ -17,11 +17,11 @@ IQR 정규화를 이용해 SSD 기반 도로장애물 탐지 모델의 연산 �
   </div>
 
   <div class="content-detail-actions publication-detail-actions" aria-label="Publication resources">
-    <a class="publication-detail-button" href="{{ '/assets/pdf/publications/ko2024iqr-slides.pdf' | relative_url }}">Slide</a>
+    <a class="publication-detail-button" href="{{ '/assets/pdf/publications/ko2024iqr-slides.pdf' | relative_url }}">Poster</a>
     <a class="publication-detail-button" href="{{ '/assets/pdf/publications/ko2024iqr-paper.pdf' | relative_url }}">PDF</a>
     <a class="publication-detail-button" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11891036">Paper</a>
   </div>
 
-<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publication</a>
+<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
 
 </div>

@@ -22,6 +22,6 @@ This work analyzes quantization and compression strategies for reducing the depl
     <a class="publication-detail-button" href="https://ieeexplore.ieee.org/abstract/document/11386441">Paper</a>
   </div>
 
-<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publication</a>
+<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
 
 </div>

@@ -17,11 +17,11 @@ MobileNetV1 SSD Lite의 효율적인 하드웨어 구현을 위해 power-of-two 
   </div>
 
   <div class="content-detail-actions publication-detail-actions" aria-label="Publication resources">
-    <a class="publication-detail-button" href="{{ '/assets/pdf/publications/lee2025poweroftwo-slides.pdf' | relative_url }}">Slide</a>
+    <a class="publication-detail-button" href="{{ '/assets/pdf/publications/lee2025poweroftwo-slides.pdf' | relative_url }}">Poster</a>
     <a class="publication-detail-button" href="{{ '/assets/pdf/publications/lee2025poweroftwo-paper.pdf' | relative_url }}">PDF</a>
     <a class="publication-detail-button" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12332106">Paper</a>
   </div>
 
-<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publication</a>
+<a class="content-detail-back publication-detail-back" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
 
 </div>
