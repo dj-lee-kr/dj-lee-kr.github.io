@@ -51,6 +51,10 @@
   display: none !important;
 }
 
+.navbar-brand .font-weight-bold {
+  font-weight: inherit !important;
+}
+
 /* About profile */
 .post:has(> article .about-intro) .post-title .font-weight-bold {
   font-weight: inherit !important;
@@ -171,7 +175,7 @@
   grid-template-columns: var(--content-tag-width) minmax(0, 1fr) auto;
   gap: 1.25rem;
   min-height: 5.75rem;
-  padding: 0.85rem 0.75rem;
+  padding: 28px 0.75rem;
 }
 
 .news-index--compact .news-index-tag {
