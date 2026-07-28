@@ -9,12 +9,12 @@ summary: Received the On-site Outstanding Poster Award at the 32nd Korean Confer
 related_posts: false
 ---
 
-<div class="news-detail-tag">{{ page.tag }}</div>
-<div class="news-detail-date">
+<div class="content-detail-tag news-detail-tag">{{ page.tag }}</div>
+<div class="content-detail-meta news-detail-date">
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
 </div>
 
-<div class="news-detail-content" markdown="1">
+<div class="content-detail-content news-detail-content" markdown="1">
 
 I received the **On-site Outstanding Poster Award (현장우수포스터상)** at the **32nd Korean Conference on Semiconductors (KCS 2025)**.
 

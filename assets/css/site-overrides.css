@@ -8,6 +8,15 @@
   --content-tag-font-size: 16px;
   --content-title-font-size: 18px;
   --content-title-font-weight: 400;
+  --detail-title-font-size: 32px;
+  --detail-title-font-weight: 400;
+  --detail-tag-font-size: 16px;
+  --detail-tag-font-weight: 400;
+  --detail-meta-font-size: 16px;
+  --detail-content-font-size: 18px;
+  --detail-line-height: 1.4;
+  --publication-detail-authors-font-size: 18px;
+  --publication-detail-button-font-size: 14px;
 }
 
 #light-toggle-system,
@@ -344,56 +353,80 @@
   transform: translateX(0.2rem);
 }
 
-/* News detail */
-.post:has(> article > .news-detail-tag) {
+/* Shared News and Publication detail layout */
+.post:has(> article .content-detail-tag) {
   display: flex;
   flex-direction: column;
 }
 
-.post:has(> article > .news-detail-tag) > .post-header {
+.post:has(> article .content-detail-tag) > .post-header {
   order: 2;
   margin-bottom: 0.65rem;
 }
 
-.post:has(> article > .news-detail-tag) > article {
+.post:has(> article .content-detail-tag) > article,
+.post:has(> article .content-detail-tag) > article > .content-detail {
   display: contents;
 }
 
-.news-detail-tag {
+.content-detail-tag {
   order: 1;
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
-  min-height: 1.65rem;
-  margin-bottom: 0.85rem;
-  padding: 0.18rem 0.55rem;
+  min-height: 26px;
+  margin-bottom: 20px;
+  padding: 3px 9px;
   border-radius: 0;
   color: #0056b3;
   background: rgba(0, 86, 179, 0.055);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: var(--detail-tag-font-size);
+  font-weight: var(--detail-tag-font-weight);
+  line-height: var(--detail-line-height) !important;
 }
 
-/* News detail title typography */
-.post:has(> article > .news-detail-tag) .post-title {
+.post:has(> article .content-detail-tag) .post-title {
   margin-bottom: 0;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1.2;
+  font-size: var(--detail-title-font-size);
+  font-weight: var(--detail-title-font-weight);
+  line-height: var(--detail-line-height) !important;
 }
 
-/* News detail date typography */
-.news-detail-date {
+.content-detail-authors,
+.content-detail-meta {
   order: 3;
-  margin-bottom: 2.5rem;
-  color: var(--global-text-color-light);
-  font-size: 16px;
-  font-weight: 400;
 }
 
-.news-detail-content {
+.content-detail-meta {
+  color: var(--global-text-color-light);
+  font-size: var(--detail-meta-font-size);
+  font-weight: 400;
+  line-height: var(--detail-line-height) !important;
+}
+
+.content-detail-content {
   order: 4;
+  font-size: var(--detail-content-font-size);
+  line-height: var(--detail-line-height) !important;
+}
+
+.content-detail-content p,
+.content-detail-content li {
+  font-size: inherit;
+  line-height: inherit !important;
+}
+
+.content-detail-actions {
+  order: 5;
+}
+
+.content-detail-back {
+  order: 6;
+}
+
+/* News detail */
+.news-detail-date {
+  margin-bottom: 2.5rem;
 }
 
 /* Publication listing */
@@ -528,28 +561,11 @@ body .publications ol.bibliography > li {
   }
 }
 
-/* Publication detail */
-.publication-detail {
-  max-width: 960px;
-}
-
-.publication-detail-tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: var(--content-tag-width);
-  min-height: 26px;
-  margin-bottom: 20px;
-  padding: 3px 9px;
-  color: #0056b3;
-  background: rgba(0, 86, 179, 0.055);
-  font-size: var(--content-tag-font-size);
-  font-weight: 400;
-}
-
+/* Publication-only detail elements */
 .publication-detail-authors {
   margin-bottom: 6px;
-  font-size: 18px;
+  font-size: var(--publication-detail-authors-font-size);
+  line-height: var(--detail-line-height) !important;
 }
 
 .publication-detail-authors em {
@@ -559,14 +575,11 @@ body .publications ol.bibliography > li {
 
 .publication-detail-venue {
   margin-bottom: 32px;
-  color: var(--global-text-color-light);
-  font-size: 16px;
 }
 
 .publication-detail-description {
   padding-top: 24px;
   border-top: 1px solid var(--global-divider-color);
-  font-size: 18px;
 }
 
 .publication-detail-actions {
@@ -584,7 +597,7 @@ body .publications ol.bibliography > li {
   padding: 7px 14px;
   border: 1px solid var(--global-divider-color);
   color: var(--global-text-color);
-  font-size: 14px;
+  font-size: var(--publication-detail-button-font-size);
   font-weight: 400;
   text-decoration: none;
   transition:

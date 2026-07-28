@@ -9,12 +9,12 @@ summary: Selected as a master's researcher for the 2026 AI Seoul Tech Research S
 related_posts: false
 ---
 
-<div class="news-detail-tag">{{ page.tag }}</div>
-<div class="news-detail-date">
+<div class="content-detail-tag news-detail-tag">{{ page.tag }}</div>
+<div class="content-detail-meta news-detail-date">
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
 </div>
 
-<div class="news-detail-content" markdown="1">
+<div class="content-detail-content news-detail-content" markdown="1">
 
 I was selected as a master's researcher for the **2026 AI Seoul Tech Research Support Program**, supported by the Seoul Future Foundation.
 

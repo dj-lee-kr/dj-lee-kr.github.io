@@ -9,12 +9,12 @@ summary: Selected for a new project under the 2025 Master's Student Research Enc
 related_posts: false
 ---
 
-<div class="news-detail-tag">{{ page.tag }}</div>
-<div class="news-detail-date">
+<div class="content-detail-tag news-detail-tag">{{ page.tag }}</div>
+<div class="content-detail-meta news-detail-date">
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
 </div>
 
-<div class="news-detail-content" markdown="1">
+<div class="content-detail-content news-detail-content" markdown="1">
 
 I was selected for a new project under the **2025 Master's Student Research Encouragement Grant**, supported by the National Research Foundation of Korea (NRF).
 
