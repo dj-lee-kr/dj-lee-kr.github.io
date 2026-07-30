@@ -5,7 +5,7 @@ date: 2025-08-28
 permalink: /news/2025-nrf-research-grant/
 inline: false
 tag: Project
-summary: Selected for a new project under the 2025 Master's Student Research Encouragement Grant supported by the National Research Foundation of Korea.
+summary: Selected for a new project under the 2025 Master's Student Research Encouragement Grant supported by the National Research Foundation of Korea✨
 related_posts: false
 ---
 

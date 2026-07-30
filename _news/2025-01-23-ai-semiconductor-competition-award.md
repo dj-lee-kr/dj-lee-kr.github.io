@@ -5,7 +5,7 @@ date: 2025-01-23
 permalink: /news/2024-ai-semiconductor-competition-award/
 inline: false
 tag: Award
-summary: Received the Excellence Award (President's Award) at the 2024 AI Semiconductor Idea/Design Competition.
+summary: Received the Excellence Award (President's Award) at the 2024 AI Semiconductor Idea/Design Competition🏆
 related_posts: false
 ---
 

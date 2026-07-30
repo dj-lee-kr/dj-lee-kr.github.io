@@ -5,7 +5,7 @@ date: 2025-02-14
 permalink: /news/2025-kcs-outstanding-poster-award/
 inline: false
 tag: Award
-summary: Received the On-site Outstanding Poster Award at the 32nd Korean Conference on Semiconductors (KCS 2025).
+summary: Received the On-site Outstanding Poster Award at the 32nd Korean Conference on Semiconductors (KCS 2025)🏆
 related_posts: false
 ---
 

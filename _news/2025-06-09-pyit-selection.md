@@ -5,7 +5,7 @@ date: 2025-06-09
 permalink: /news/2025-pyit-selection/
 inline: false
 tag: Project
-summary: Selected for the 2025 Promising Young Investigator Teams (PYIT) research support program at SeoulTech.
+summary: Selected for the 2025 Promising Young Investigator Teams (PYIT) research support program at SeoulTech☺️
 related_posts: false
 ---
 
